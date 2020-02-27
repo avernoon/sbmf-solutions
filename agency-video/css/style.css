@@ -3161,6 +3161,7 @@ iframe {
 .feature-item .text h3,
 .half-section-alt,
 .bg-counters,
+.bg-counters2,
 .progress-bars .progress,
 .progress-bars .progress p {
     position: relative;
@@ -3622,6 +3623,11 @@ iframe {
 
 .bg-counters {
     background: url(../img/counter-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.bg-counters2 {
+    background: url(../img/counter-bg2.jpg) no-repeat center center;
     background-size: cover;
 }
 
