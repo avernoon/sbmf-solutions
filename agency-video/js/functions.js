@@ -65,12 +65,12 @@ jQuery($=> {
             };
 
             //Ajax post data to server
-            $.post('contact.php', postData, function (response) {
+            $.post('https://formspree.io/mgeybjqp', postData, function (response) {
                 //load json data from server and output message
                 if (response.type === 'error') {
-                    output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">' + response.text + '</div>';
+                    output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">' + 'Error' + '</div>';
                 } else {
-                    output = '<div class="alert-success" style="padding:10px; margin-bottom:25px;">' + response.text + '</div>';
+                    output = '<div class="alert-success" style="padding:10px; margin-bottom:25px;">' + 'Success' + '</div>';
                     //reset values in all input fields
                     $('.getin_form input').val('');
                     $('.getin_form textarea').val('');
